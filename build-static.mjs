@@ -240,7 +240,7 @@ const card = (product) => `
 `;
 
 const home = layout({
-  title: 'Cyberpunk Glasses Portfolio',
+  title: 'Cyberpunk Glasses Portfolio | WordPress Storefront Case Study',
   body: `
     <section id="home" class="hero" style="background-image:url('/assets/images/hero.png');">
       <div class="hero-orbit hero-orbit-left"></div>
@@ -248,14 +248,14 @@ const home = layout({
       <div class="hero-content">
         <p class="eyebrow">Portfolio Storefront // WordPress Build</p>
         <div class="glitch-wrapper"><h1 class="hero-title">AUGMENT YOUR REALITY</h1></div>
-        <p class="hero-subtitle">A portfolio-grade storefront built in WordPress with a full product catalog, product pages, persistent cart, and a checkout flow adapted for static hosting.</p>
+        <p class="hero-subtitle">A custom WordPress storefront case study with product pages, cart behavior, and a migration-ready architecture, published publicly as a static portfolio build on Vercel.</p>
         <div class="hero-actions">
           <a href="/shop/" class="btn-cyber">Enter Store</a>
           <a href="/checkout/" class="btn-cyber pink">See Checkout</a>
         </div>
         <div class="hero-metrics">
           <div class="metric-card"><span>Catalog pages</span><strong>6 SKUs</strong></div>
-          <div class="metric-card"><span>Portfolio model</span><strong>WP Theme + Vercel</strong></div>
+          <div class="metric-card"><span>Stack model</span><strong>WP Theme + Static Export</strong></div>
           <div class="metric-card"><span>Delivery</span><strong>Static showcase</strong></div>
         </div>
       </div>
@@ -358,7 +358,7 @@ const checkout = layout({
 const about = layout({
   title: 'About - Cyberpunk Glasses Portfolio',
   body: `
-    <section class="content-shell page-shell"><div class="page-hero glass-panel"><p class="eyebrow">About</p><h1>Portfolio Case Study</h1><p>This project is presented as a portfolio storefront that is already structured to migrate later into a production-ready WordPress ecommerce stack.</p></div></section>
+    <section class="content-shell page-shell"><div class="page-hero glass-panel"><p class="eyebrow">About</p><h1>Portfolio Case Study</h1><p>This project is presented as a portfolio storefront that is already structured to migrate later into a production-ready WordPress ecommerce stack, instead of stopping at a visual mock.</p></div></section>
     <section class="experience-grid">
       <div class="glass-panel featured-panel">
         <p class="eyebrow">Portfolio Ready For Migration</p>
