@@ -1,0 +1,8 @@
+{
+  "name": "cyberpunk-glasses-portfolio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build-static.mjs"
+  }
+}
