@@ -144,6 +144,7 @@ const layout = ({ title, body }) => `<!doctype html>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${title}</title>
+  <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
@@ -469,6 +470,7 @@ await fs.mkdir(path.join(dist, 'product'), { recursive: true });
 await fs.copyFile(path.join(themeSource, 'style.css'), path.join(dist, 'assets', 'style.css'));
 await fs.copyFile(path.join(themeSource, 'assets', 'js', 'theme.js'), path.join(dist, 'assets', 'js', 'theme.js'));
 await fs.cp(path.join(themeSource, 'assets', 'images'), path.join(dist, 'assets', 'images'), { recursive: true });
+await fs.copyFile(path.join(themeSource, 'favicon.png'), path.join(dist, 'favicon.png'));
 
 await fs.writeFile(path.join(dist, 'index.html'), home);
 await fs.writeFile(path.join(dist, 'shop', 'index.html'), shop);
