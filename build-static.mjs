@@ -3,6 +3,7 @@ import path from 'node:path';
 
 const root = process.cwd();
 const dist = path.join(root, 'dist');
+const themeSource = path.join(root, 'theme-source', 'cyberpunk-glasses');
 
 const products = [
   {
@@ -464,6 +465,10 @@ await fs.mkdir(path.join(dist, 'checkout'), { recursive: true });
 await fs.mkdir(path.join(dist, 'about'), { recursive: true });
 await fs.mkdir(path.join(dist, 'faq'), { recursive: true });
 await fs.mkdir(path.join(dist, 'product'), { recursive: true });
+
+await fs.copyFile(path.join(themeSource, 'style.css'), path.join(dist, 'assets', 'style.css'));
+await fs.copyFile(path.join(themeSource, 'assets', 'js', 'theme.js'), path.join(dist, 'assets', 'js', 'theme.js'));
+await fs.cp(path.join(themeSource, 'assets', 'images'), path.join(dist, 'assets', 'images'), { recursive: true });
 
 await fs.writeFile(path.join(dist, 'index.html'), home);
 await fs.writeFile(path.join(dist, 'shop', 'index.html'), shop);
